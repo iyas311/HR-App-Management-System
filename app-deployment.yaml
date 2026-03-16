@@ -17,7 +17,7 @@ spec:
         image: rishabhmishra01/hr-app-management-system-main-app:latest
         envFrom:
             - configMapRef:
-              name: hrapp-config
+                name: hrapp-config
         ports:
         - containerPort: 3000
           
