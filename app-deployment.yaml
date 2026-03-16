@@ -15,12 +15,12 @@ spec:
       containers:
       - name: hr-app
         image: rishabhmishra01/hr-app-management-system-main-app:latest
-        ports:
-        - containerPort: 3000
-          envFrom:
+        envFrom:
             - configMapRef:
               name: hrapp-config
-
+        ports:
+        - containerPort: 3000
+          
 ---
 apiVersion: v1
 kind: Service
